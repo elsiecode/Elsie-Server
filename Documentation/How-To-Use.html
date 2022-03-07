@@ -1,0 +1,71 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Elsie v1.0.0.</h1>
+
+<h2>How To Use</h2>
+
+<h3>1.Open the elsie folder</h3> 
+
+<p>index.php file. Once Elsie is uploaded to the server this file launches the functions needed to build your webpage. It will also let you know if an index.html file (website homepage) already exsits on the server.</p>
+
+<p>User folder. This folder holds the text files Elsie will read to decide how to build your webpage.</p>
+
+<p>ElsieFiles folder. This folder holds all the task functions Elsie needs to build your webpage.</p>
+
+<h3>2.Create content</h3>
+
+<p>Elsie uses file names to identify the type of content a text file may contain. Elsie accepts three text files. site-info.txt for general site infomation, blog-post.txt for post content and style.txt for styling the webpage. </p>
+<p>Elsie uses tags within a text file to identify how the content should be placed into the webpage. Elsie tags look like this. &lt;open tag&gt;Some content here&lt;/close tag&gt; </p>
+<p>You can learn more about which tags are accepted in a text file by reading below. </p>
+
+<h4>Site information</h4>
+
+<p>To add site information create a new file name it "site-info.txt". </p> 
+<p>site-info.txt accepts the following tags</p> 
+<p>&lt;title&gt;Name of your webpage&lt;/title&gt;</p>
+<p>&lt;description&gt;One or two lines about your webpage.&lt;/description&gt;</p>
+<p>Once finished save inside User folder.</p> 
+
+<h4>Creating a coming soon page</h4> 
+
+<p>To create a generic coming soon page with the message "Website Coming Soon" leave User folder empty. </p>
+
+<p>To create a coming soon page with the title of your webpage create a file name it "site-info.txt" type inside the file &lt;title&gt;Name of your webpage&lt;/title&gt; and save it to the User folder.</p>
+
+<h4>Creating a blog post</h4> 
+
+<p>To create a blog post create a new file name it "blog-post.txt". </p>
+<p>blog-post.txt accepts the following tags</p> 
+<p>&lt;title&gt;Title of post&lt;/title&gt;</p>
+<p>&lt;heading&gt;Paragraph title&lt;/heading&gt;</p>
+<p>&lt;paragraph&gt;Paragraph text&lt;/paragraph&gt;</p>
+<p>&lt;link&gt;&lt;url&gt;example.com&lt;/url&gt;&lt;text&gt;Link Text&lt;/text&gt;&lt;/link&gt;</p>
+<p>Once finished save inside User folder.</p>
+
+<h3>3.Style content</h3>
+<p>To style content create a new file name it "style.txt". </p>
+<p>style.txt accepts the following tag</p>
+<p>&lt;theme&gt;Theme name&lt;/theme&gt;</p>
+<p>Available themes nightsky, grasshopper, lights out.</p>
+<p>For white background with black text it is not necessary to specify a theme.</p>
+<p>Once finished save inside User folder.</p>
+
+<h3>4.Upload Elsie</h3>
+<p>Once finished creating the text files and saving them to the User folder you will need to upload the elsie folder to your web server. </p>
+<p>Please note that Elsie is indented to be used at the time of upload. Do not upload the elsie folder until you a ready to create your webpage.</p>
+<p>Be sure to place the elise folder in the same folder that holds public webpages for your site. </p>
+<p>Go to yourdomain/elsie. If you get an error make sure you uploaded Elsie to the right location and that your webhost has php installed on the server (This is typically already installed when activating your hosting account.)</p>
+<p>When finished you should see your completed webpage at which time the elsie folder will remove itself from the server. It is recommended that you check the file manager to make sure Elsie is completely removed from server.</p>
+
+
+<h2>Development</h2>
+<h3>Notes</h3>
+<p>Elsie outputs the webpage in standard html and css. If you wish to expand upon what Elsie built all you need to do is download the index.html file from your server and open it in a text/code editor.</p>
+<h3>Elsie Varibales</h3>
+<p>All Elsie varibales use the prefix "e_" to add your own varibles avoid using this prefix.</p>
+<h3>Elsie Functions</h3>
+<p>All Elsie functions use the prefix "elsie_" to add your own functions avoid using this prefix.</p>
+</body>
+</html>
